@@ -31,7 +31,7 @@ cmake \
   -DCMAKE_BUILD_TYPE=RelWithDebInfo \
   -DCMAKE_OSX_ARCHITECTURES=arm64 \
   -DCMAKE_OSX_DEPLOYMENT_TARGET=14.1 \
-  -DCMAKE_OSX_SYSROOT=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk \
+  -DCMAKE_OSX_SYSROOT=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk \
   -DLAF_BACKEND=skia \
   -DSKIA_DIR=$HOME/deps/skia \
   -DSKIA_LIBRARY_DIR=$HOME/deps/skia/out/Release-arm64 \
