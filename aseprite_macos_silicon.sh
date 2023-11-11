@@ -5,7 +5,7 @@
 # Install git using this command (brew install git)
 
 
-# Make sure to change line 29 and line 30 according to your mac OS and xcode versions
+# Make sure to change line 29 according to your mac OS
 
 # Install ninja compiler
 brew install ninja
@@ -19,7 +19,7 @@ mkdir deps
 cd deps
 mkdir skia
 cd skia
-curl -L https://github.com/aseprite/skia/releases/download/m81-b607b32047/Skia-macOS-Release-x64.zip | tar zx
+curl -L https://github.com/aseprite/skia/releases/download/m102-861e4743af/Skia-macOS-Release-arm64.zip | tar zx
 
 # Install aseprite at $HOME/aseprite
 cd $HOME
