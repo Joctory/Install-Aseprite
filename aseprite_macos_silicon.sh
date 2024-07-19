@@ -47,7 +47,7 @@ $HOME/aseprite/build/bin/aseprite
 # Merge the data into Aseprite trial
 mkdir bundle
 cd bundle
-curl -O -J "https://www.aseprite.org/downloads/trial/Aseprite-v1.3.7-trial-macOS.dmg"
+curl -O -J "https://www.aseprite.org/downloads/trial/Aseprite-v1.3.6-trial-macOS.dmg"
 mkdir mount
 yes qy | hdiutil attach -quiet -nobrowse -noverify -noautoopen -mountpoint mount Aseprite-v1.3.4-trial-macOS.dmg
 cp -rf mount/Aseprite.app .
