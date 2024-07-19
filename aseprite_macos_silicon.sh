@@ -57,3 +57,6 @@ cp -rf ../aseprite/build/bin/aseprite Aseprite.app/Contents/MacOS/aseprite
 rm -rf Aseprite.app/Contents/Resources/data
 cp -rf ../aseprite/build/bin/data Aseprite.app/Contents/Resources/data
 cd ..
+
+# Install on /Applications
+sudo cp bundle/Aseprite.app /Applications/
