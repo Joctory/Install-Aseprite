@@ -53,9 +53,9 @@ yes qy | hdiutil attach -quiet -nobrowse -noverify -noautoopen -mountpoint mount
 cp -rf mount/Aseprite.app .
 hdiutil detach mount
 rm -rf Aseprite.app/Contents/MacOS/aseprite
-cp -rf ../aseprite/build/bin/aseprite Aseprite.app/Contents/MacOS/aseprite
+cp -rf /aseprite/build/bin/aseprite Aseprite.app/Contents/MacOS/aseprite
 rm -rf Aseprite.app/Contents/Resources/data
-cp -rf ../aseprite/build/bin/data Aseprite.app/Contents/Resources/data
+cp -rf /aseprite/build/bin/data Aseprite.app/Contents/Resources/data
 cd ..
 
 # Install on /Applications
