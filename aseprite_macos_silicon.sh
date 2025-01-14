@@ -19,7 +19,7 @@ mkdir deps
 cd deps
 mkdir skia
 cd skia
-curl -L https://github.com/aseprite/skia/releases/download/m102-861e4743af/Skia-macOS-Release-arm64.zip | tar zx
+curl -L https://github.com/aseprite/aseprite/releases/download/v1.3.12-beta1/Aseprite-v1.3.12-beta1-Source.zip | tar zx
 
 # Install aseprite at $HOME/aseprite
 cd $HOME
@@ -47,9 +47,9 @@ $HOME/aseprite/build/bin/aseprite
 # Merge the data into Aseprite trial
 mkdir bundle
 cd bundle
-curl -O -J "https://www.aseprite.org/downloads/trial/Aseprite-v1.3.6-trial-macOS.dmg"
+curl -O -J "https://www.aseprite.org/downloads/trial/Aseprite-v1.3.9.1-trial-macOS.dmg"
 mkdir mount
-yes qy | hdiutil attach -quiet -nobrowse -noverify -noautoopen -mountpoint mount Aseprite-v1.3.4-trial-macOS.dmg
+yes qy | hdiutil attach -quiet -nobrowse -noverify -noautoopen -mountpoint mount Aseprite-v1.3.9.1-trial-macOS.dmg
 cp -rf mount/Aseprite.app .
 hdiutil detach mount
 rm -rf Aseprite.app/Contents/MacOS/aseprite
